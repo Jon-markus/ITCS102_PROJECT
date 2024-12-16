@@ -98,7 +98,23 @@ def print_F():
             print()
             print("\t\t----Comment----")
             print("")
-            print("\t")
+            print("\tComments in Python are pieces of text that are ignored by the Python interpreter. They are") 
+            print ("\tused to Explain the code to reader, or to disable code that you don't want to run.")
+            
+            #Type of Comments in Python
+            time.sleep(0.5)
+            print ("\n\t\tTypes of Comments in Python")
+            print("\t1\t---\tSingle-line Comment\n\t2\t---\tMulti-line Comment")
+            comment = input("Choose in the Following: ")
+
+            if comment == '1':
+                print("\n\n\t\t-----Single-Line Comment------")
+                print("\t● Start with a hashtag symbol (#) and go to the end of the line.")
+
+            elif comment == '2':
+                print("\n\n\t\tSingle-Line Comment")
+
+
 
 
 def d():
