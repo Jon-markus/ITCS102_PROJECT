@@ -1,31 +1,35 @@
-#-----------MENU----------------
+#BSIT - 2A ----DE VILLA, JOHN MARC A.
+
+import time
+import os
+
+def clear_S():
+    input("\n\n-----PRESS ENTER TO PROCEED TO THE NEXT PART-----")
+    os.system()
 
 def Overview():
 
     print("")
+    time.sleep(0.02)
     print ("\n\t\t\t\t----------OVERVIEW----------")
-    print ("\n\n\tIn 2023, studying programming is not just about coding; it's about equipping")
-    print ("\tyourself with the skills and mindset to thirive in an increasingly digital and")
-    print ("\tinterconnected world. Wheter you aspire to become a software engineer, a data")
-    print ("\tscientist, an entrepreneur, or simply a tech-savvy individual, programming is a")
-    print ("\tskill that empowers you to innovate, solve problems, and seize opportunities in")
-    print ("\tthe digital landscape.\n\n") 
-
+    time.sleep(0.02)
+    text = ("\n\n\tIn 2023, studying programming is not just about coding; it's about equipping\n\tyourself with the skills and mindset to thirive in an increasingly digital and\n\tinterconnected world. Wheter you aspire to become a software engineer, a data\n\tscientist, an entrepreneur, or simply a tech-savvy individual, programming is a\n\tskill that empowers you to innovate, solve problems, and seize opportunities in\n\tthe digital landscape.\n")
+    
 def Introduction():
 
-    import time
+    
 
     isContinue = True
     while isContinue == True:
          
         print ("")
         print("\t\t\t----Python as a Programming Language----")
-        time.sleep(0.5)
-        print("\t       _option_")
-        print("\n\ta\t---\tWhat is Python?")
-        print("\tb\t---\tHistory of Python")
-        print("\tc\t---\tFeatures of Python")
-        print("\td\t---\tBack")
+        time.sleep(0.3)
+        print("\n\n\t\t\t\t\t_option_")
+        print("\n\t\ta\t---\tWhat is Python?")
+        print("\t\tb\t---\tHistory of Python")
+        print("\t\tc\t---\tFeatures of Python")
+        print("\t\td\t---\tBack")
         print ("")
         print("")
 
@@ -104,7 +108,7 @@ def print_F():
             #Type of Comments in Python
             time.sleep(0.5)
             print ("\n\t\tTypes of Comments in Python")
-            print("\t1\t---\tSingle-line Comment\n\t2\t---\tMulti-line Comment")
+            print("\t1\t---\tSingle-line Comment\n\t2\t---\tMulti-line Comment\n\t3\t---\tBack")
             comment = input("Choose in the Following: ")
 
             if comment == '1':
@@ -112,7 +116,31 @@ def print_F():
                 print("\t● Start with a hashtag symbol (#) and go to the end of the line.")
 
             elif comment == '2':
-                print("\n\n\t\tSingle-Line Comment")
+                print("\n\n\t\t-----Multi-Line Comment------")
+                print("\t● Start with three double quotes and end with three double quotes")
+            
+            elif comment == '3':
+                print("\n\t\t\t\t\t---Exit---")
+                isContinue = False
+            
+            else:
+                print ("\n\t\t\t\t= Invalid Input =\n")
+        
+        elif menu.lower() == 'b':
+            print()
+            print("\t\t----Variables----")
+            print("")
+            print("\t● Variables in programming are like named boxes that can store information.\n\t You can use variables to store any \n\ttype of data, such as numbers, strings, lists, and objects.") 
+            print()
+            print("\t1 - Examples")
+            print("\na\t---\tExamples\n\tb\t---\tBack")
+
+            choose = input("\t\tChoose in the following: ")
+            
+
+            
+
+
 
 
 
@@ -131,6 +159,9 @@ def g():
 
 def h():
     pass
+    
+    
+    
 
 Overview()
 Introduction()
