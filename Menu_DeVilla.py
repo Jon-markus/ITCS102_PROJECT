@@ -1,11 +1,14 @@
 #BSIT - 2A ----DE VILLA, JOHN MARC A.
 
 import time
-import os
 
-def clear_S():
-    input("\n\n-----PRESS ENTER TO PROCEED TO THE NEXT PART-----")
-    os.system()
+
+def tap():
+    
+    Esc = input("\n\nPress Enter to show the Examples: ")
+    if Esc == "":
+        print("\n\n\t\t\t---Example Code---")
+        print()
 
 def Overview():
 
@@ -18,7 +21,7 @@ def Overview():
             print(char,end="",flush=True)
             time.sleep(0.01)
     
-
+#-------------------INTRODUCTION---------------------------
 def Introduction():
 
     isContinue = True
@@ -73,13 +76,13 @@ def Introduction():
 
 
 
-
+#-------------------PRINT FUNCTION---------------------------
 def print_F():
     
     import time
-    isContinue = True
+    isFunction = True
 
-    while isContinue == True:
+    while isFunction == True:
         print()
         print("\t\t\t\t----Print Statement----")
         print()
@@ -139,7 +142,7 @@ def print_F():
             print()
             print("\t\t\t\t----Variables----")
             print("")
-            text5 = ("\t● Variables in programming are like named boxes that can store information.\n\t You can use variables to store any \n\ttype of data, such as numbers, strings, lists, and objects.") 
+            text5 = ("\t● Variables in programming are like named boxes that can store information.\n\t You can use variables to store any type of data, such as numbers,\n\t strings, lists, and objects.") 
             for char in text5:
                 print(char,end="",flush=True)
                 time.sleep(0.01)
@@ -151,7 +154,7 @@ def print_F():
             ask = input("\n\n\t\tChoose in the following: ")
             if ask == '1':
                 print("\n\n\t\t----Examples----")
-                print("\n\t\t[ my_name = John ]\n\t\t[ i = 20 ]\n\t\t[ isContinue = True ]")
+                print("\n\t\t my_name = John \n\t\t i = 20\n\t\t isContinue = True")
                 
             elif ask == '2':
                 print("\n\t\t\t\t\t---Exit---")
@@ -168,40 +171,309 @@ def print_F():
                 time.sleep(0.01)
             print ("\n\tPython has the following data types built-in by default\n")
             print ("\t\t● Integers\t===\tint (123,1000)")
-            print ('''● String\t===\tstr ('Hello','Word')''')
+            print ('''\t\t● String\t===\tstr ("Hello",'Word', "2005")''')
+            print ("\t\t● Float\t\t===\tfloat (1.50,2005.20)")
+            print ("\t\t● Boolean\t===\tbool (True,False)")
+            
+                #===Examples===
+            ask_ex = input("\n\nPress Enter to show the Examples")
+            if ask_ex == "":
+                print("\n\n---Example Code---")
+
+                print("\n\n\t==INPUT==")
+                print('''\n\tage = 20 # ---Integer''')
+                print('''\n\tprice = 19.99  # ---Float''')
+                print('''\n\tname = "Marcus"  # ---String''')
+                print('''\n\tisStudent = True  # ---Float\n\n''')
+
+                print('''\tprint("Age: ", age) ''')
+                print('''\tprint("Price: ", price)''')
+                print('''\tprint("Name: ",name)''')
+                print('''\tprint("Is Student: ", isStudent)''')
+
+                print("\n\n\t==OUTPUT==")
+                print('''\n\tAge: 20 ''')
+                print('''\n\tPrice: 19.99 ''')
+                print('''\n\tName:Marcu;s  ''')
+                print('''\n\tIs Student: True \n\n''')
+            elif ask_ex.lower()== 'x':
+                print("\n\t\t\t===Exit===")
+                break
+            else:
+                print("==Just Press Enter key on your Keyboard==")
+        
+        elif menu.lower() == 'd':
+            print()
+            print("\t\t\t\t----User Input----")
+            text7 = ('''\n\n\tPython provides the input() function.input() reads what 
+        the user types on the keyboard and return it as a string \n\n''')
+            for char in text7:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+            ask_ex3 = input("\n\nPress Enter to show the Examples: ")
+
+            if ask_ex3 == "":
+                print("\n\n\t\t---Example Code---")
+                print()
+                name = input("\tEnter your name: ")
+
+                print("\n\tHi, ",name," Welcome to my program!")
+                print("\n\n\t===================Code===========================")
+                time.sleep(1)
+                print("\n\t==INPUT==")
+
+                print('''\t name = input("Enter your name: ")
+                print("Hi,",name," Welcome to my program!) ''')
+                time.sleep(1)
+                print("\n\n\t==OUTPUT==")
+                print('''Hi,(your input) Welcome to my program!''' )
+
+            else: 
+                print ("\n\t\t\t\t= Invalid Input =\n")
+        
+        elif menu.lower() == 'e':
+            print ("\n\t\t\t\t= Exit =\n")
+            break
+
+        else:
+            print ("\n\t\t\t\t= Invalid Input =\n")
+
+#-------------------OPERATORS---------------------------
+def operator():
+    isCorrect = True
+    while isCorrect == True:
+        time.sleep(0.3)
+        print(f"\n\n\t\t\t----Python Operators----")
+
+        print("\n\n\t\t\t\t_option_\n\n\t\t\ta\t---\tDefinition\n\t\t\tb\t---\tTypes\n\t\t\tc\t---\tExit")
+        
+        time.sleep(1)
+        operator = input("\n\t\tChoose in the following: ")
+
+        if operator.lower() == 'a':
+            print("\n\n\t\t\t\t----Python Operators----")
+            print("")
+            text8 = ('''\n\tOperators are used to perform operations on variables and values.
+         ''')
+            for char in text8:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+        
+        elif operator.lower() == 'b':
+            text9 = ('''\n\tPython divides the operators in the following groups:''')
+            for char in text9:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+
+            time.sleep(0.5)
+
+            print('''\n\t\ta\t---\tArithmetic operators
+                b\t---\tAssignment operators
+                c\t---\tComparison operators
+                d\t---\tLogical operators
+                e\t---\tExit
+                    ''') 
+            ask_Opera = input("\n\t\tChoose in the following: ")
+
+            if ask_Opera.lower() == 'a':
+                print ("\n\t\t\t==Arithmetic Operators==") 
+                text10 = ('''\n\tArithmetic operators are used with numeric values to perform common 
+                        mathematical operations:
+                
+               \t\tOperator\tName\n\n\t\t\t+\t\tAddition\n\t\t\t-\t\tSubtraction\n\t\t\t*\t\tMultiplication\n\t\t\t/\t\tDivision\n\t\t\t%\t\tModulus\n\t\t\t**\t\tExponentiation\n\t\t\t//\t\tFloor Division ''')
+                for char in text10:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                
+                print()
+                tap()
+                num = eval(input("\t\tEnter a number --> "))
+                numb = eval(input("\t\tEnter second number --> "))
+
+                sum = num + numb
+
+                print("\t\tthe sum of ", num, "+",numb," = ",sum)
+
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\tnum = eval(input("Enter a number --> "))
+        numb = eval(input("Enter second number --> "))
+
+        sum = num + numb
+
+        print("the sum of ", num, "+",numb," = ",sum)
+''')
+                print("\n\n\t===Exit===")
 
 
+
+            elif ask_Opera.lower() == 'b':
+                print ("\n\t\t\t==Assignment Operators==")
+                text11 = ('''\n\tAssignment operators are used to assign values to variables:
+                            =
+                            +=
+                            -=
+                            *=
+                            /=
+                            %=
+                            //=
+                            **=  ''')
+                for char in text11:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                print()
+                tap()
+                time.sleep(0.5)
+                x = 5
+
+                print ("\t",x)
+
+                x+=5
+                print ("\t",x)
+
+                x += 10
+                print ("\t",x)
+
+                x += 15
+                print ("\t",x)
+
+                x +=20
+                print ("\t",x)
+
+                x += 25
+                print ("\t",x)
+                
+                time.sleep(0.5)
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\tx = 5
+
+        print (x)
+
+        x+=5
+        print (x)
+
+        x += 10
+        print (x)
+
+        x += 15
+        print (x)
+
+        x +=20
+        print (x)
+
+        x += 25
+        print (x)
+''')
+                print("\n\n\t===Exit===")
 
             
+            elif ask_Opera.lower() == 'c':
+                print ("\n\t\t\t==Comparison operators==")
+                text12 = ('''\n\tComparison operators are used to compare two values:
+                            ==\tEqual
+                            !=\tNot Equal
+                            >\tGreater Than
+                            <\tLess Than
+                            >=\tGreater Than or Equal to
+                            <=\tLess Than or Equal to
+                            ''')
+                for char in text12:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                print()
+                tap()
+                print()
+                Age = eval(input("\n\t\tEnter your age ---> "))
 
+                #1-7 - Toddler
+                #8-13 - pre teen
+                #14-18 - teenager
+                #19-31 - early adulthood
+                #32-45 - Mid adulthood
+                #46-59 - post adulthood
+                #60 + - senior
+
+                if Age <= 7:
+                    print("\t\tYour age is categorized as toddler")
+
+                elif Age <= 13 and Age >= 8:
+                    print ("\t\tYour age is categorized as Pre teen")
+
+                elif Age <=18 and Age >=14:
+                    print ("\t\tYour age is categorized as Teenager")
+
+                elif Age <=31 and Age >= 19:
+                    print ("\t\tYour age is categorized as Early Adulthood")
+
+                elif Age <=45 and Age >= 32: 
+                    print ("\t\tYour age is categorized as Mid Adulthood")
+
+                elif Age <= 59 and Age >= 46:
+                    print ("\t\tYour age is categorized as Post Adulthood")
+
+                elif Age >= 60:
+                    print ("\t\tYour age is categorized as Senior")
+
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\tAge = eval(input(" Enter your age ---> "))
+
+                #1-7 - Toddler
+                #8-13 - pre teen
+                #14-18 - teenager
+                #19-31 - early adulthood
+                #32-45 - Mid adulthood
+                #46-59 - post adulthood
+                #60 + - senior
+
+                if Age <= 7:
+                    print("Your age is categorized as toddler")
+
+                elif Age <= 13 and Age >= 8:
+                    print ("Your age is categorized as Pre teen")
+
+                elif Age <=18 and Age >=14:
+                    print ("Your age is categorized as Teenager")
+
+                elif Age <=31 and Age >= 19:
+                    print ("Your age is categorized as Early Adulthood")
+
+                elif Age <=45 and Age >= 32: 
+                    print ("Your age is categorized as Mid Adulthood")
+
+                elif Age <= 59 and Age >= 46:
+                    print ("Your age is categorized as Post Adulthood")
+
+                elif Age >= 60:
+                    print ("Your age is categorized as Senior")
+''')
+                print("\n\n\t===Exit===")
+
+            elif ask_Opera.lower() == 'd':
+                print ("\n\t\t\t\tLogical Operators\n")
+
+
+            elif ask_Opera.lower() == 'e':
+                print ("\n\t\t\t\t= Exit =\n")
             
+            else:
+                print ("\n\t\t\t\t= Invalid Input =\n")
 
 
-
-
-
-
-def d():
-    pass
-
-def e():
-    pass
-
-def f():
-    pass
-
-def g():
-    pass
-
-def h():
-    pass
-    
     
     
 
+def conditional_St():
+    pass
+
+def Looping():
+    pass
+
+def List():
+    pass
 
 
-print_F()
+
+operator()
+# print_F()
 # isContinue = True
 
 # while isContinue:
