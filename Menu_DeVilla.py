@@ -363,18 +363,21 @@ def operator():
         x += 25
         print (x)
 ''')
+                time.sleep(0.5)
                 print("\n\n\t===Exit===")
 
             
             elif ask_Opera.lower() == 'c':
                 print ("\n\t\t\t==Comparison operators==")
                 text12 = ('''\n\tComparison operators are used to compare two values:
-                            ==\tEqual
-                            !=\tNot Equal
-                            >\tGreater Than
-                            <\tLess Than
-                            >=\tGreater Than or Equal to
-                            <=\tLess Than or Equal to
+                          
+                    Operator\t\tName
+                        ==\t\tEqual
+                        !=\t\tNot Equal
+                        >\t\tGreater Than
+                        <\t\tLess Than
+                        >=\t\tGreater Than or Equal to
+                        <=\t\tLess Than or Equal to
                             ''')
                 for char in text12:
                     print(char,end="",flush=True)
@@ -382,6 +385,7 @@ def operator():
                 print()
                 tap()
                 print()
+                time.sleep(0.5)
                 Age = eval(input("\n\t\tEnter your age ---> "))
 
                 #1-7 - Toddler
@@ -413,6 +417,7 @@ def operator():
                 elif Age >= 60:
                     print ("\t\tYour age is categorized as Senior")
 
+                time.sleep(0.5)
                 print("\n\n\t\t\t==INPUT==")
                 print('''\n\n\tAge = eval(input(" Enter your age ---> "))
 
@@ -445,36 +450,491 @@ def operator():
                 elif Age >= 60:
                     print ("Your age is categorized as Senior")
 ''')
+                time.sleep(0.5)
                 print("\n\n\t===Exit===")
 
             elif ask_Opera.lower() == 'd':
                 print ("\n\t\t\t\tLogical Operators\n")
+                text12 = ('''\n\tLogical operators are used to combine conditional statements:
+                            ==\tEqual
+                            !=\tNot Equal
+                            >\tGreater Than
+                            <\tLess Than
+                            >=\tGreater Than or Equal to
+                            <=\tLess Than or Equal to
+                            ''')
+                for char in text12:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                print()
+                tap()
+                print()
+                gold = 0
+
+                miner = input("\n\n\tHi, What is your name: ")
+
+                isGold = input ("\tis the mineral gold? ")
+
+                if isGold.lower() == "yes":
+                    gold += 1
+                    print (f"\n\tHi {miner}, Your total number of gold is {gold}")
+                else:
+                    print (f"\n\tHi {miner}, Your total number of gold is {gold}") 
+                
+                time.sleep(0.5)
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\tgold = 0
+
+                miner = input("\n\n\tHi, What is your name: ")
+
+                isGold = input ("\tis the mineral gold? ")
+
+                if isGold.lower() == "yes":
+                    gold += 1
+                    print (f"\n\tHi {miner}, Your total number of gold is {gold}")
+                else:
+                    print (f"\n\tHi {miner}, Your total number of gold is {gold}") 
+                
+''')
+                time.sleep(0.5)
+                print("\n\n\t===Exit===")
+
 
 
             elif ask_Opera.lower() == 'e':
                 print ("\n\t\t\t\t= Exit =\n")
+
+                break
             
             else:
                 print ("\n\t\t\t\t= Invalid Input =\n")
+
+                continue
 
 
     
     
 
 def conditional_St():
-    pass
+    isTama = True
+    while isTama == True:
+        time.sleep(0.3)
+        print(f"\n\n\t\t\t----Conditional Statements----")
+
+        print("\n\n\t\t\t\t_option_\n\n\t\t\ta\t---\tDefinition\n\t\t\tb\t---\tNested Condition\n\t\t\tc\t---\tExit")
+        
+        time.sleep(1)
+        con_Sta = input("\n\t\tChoose in the following: ")
+
+        if con_Sta.lower() == 'a':
+            print("\n\n\t\t\t\t----Conditional Statements----")
+            print("")
+            text13 = ('''\n\tConditional statements (if, else, and elif) are fundamental programming 
+            constructs that allow you to controlthe flow of your program based on conditions 
+            that you specify. They provide away to make decisions in your program and execute 
+            different code based on those decisions.
+        ''')
+            for char in text13:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+
+            print()
+            tap()
+            name = input("\tEnter your name ---> ")
+            password = input("\tEnter your password (helloworld , kaya_ko) ---> ")
+
+            if password.lower() == "helloworld":
+                print ("\tAccess Granted")
+                print (f"\tHi,{name} I hope You enjoy the system")
+
+            elif password.lower() == "kaya_ko":
+                print ("\tAccess Granted")
+                print (f"\tHi,{name} I hope You enjoy the system")
+
+            else :
+                print ("\n\n\t\t==Access Denied==")
+
+            print("\n\n\tsystem exit")
+            
+            print("\n\n\t\t\t==INPUT==")
+            print('''\n\n\tname = input("Enter your name ---> ")
+                password = input("Enter your password (helloworld , kaya_ko) ---> ")
+
+                if password.lower() == "helloworld":
+                    print ("Access Granted")
+                    print (f"Hi,{name} I hope You enjoy the system")
+
+                elif password.lower() == "kaya_ko":
+                    print ("Access Granted")
+                    print (f"Hi,{name} I hope You enjoy the system")
+
+                else :
+                    print ("Access Denied")
+
+                print("system exit")
+            
+''')
+            print("\n\n\t===Exit===")
+
+
+
+        
+        elif con_Sta.lower() == 'b':
+            print("\n\n\t\t\t\t----Nested Condition----")
+            print("")
+            text14 = ('''\n\tThe nested if statements in Python are the nesting of an if
+        statement inside another if statement with or without an else statement.
+        ''')
+            for char in text14:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+
+            print()
+            tap()
+           # Grocery
+
+            print ("\n\n  ------------------GROCERY------------------")
+            name = input ("\n\n\tPlease Enter your name: ")
+
+            grocery = input("\tDid you buy a grocery(Yes/No) ---> ")
+
+            if grocery.lower() == "yes":
+                item = input("\n\tName  of the item: ")
+                price = eval(input("\tPrice of the item: "))
+                Age = eval(input("\tEnter your age: "))
+                
+                if Age < 60:
+                    tax = price * .12
+                    Nprice = tax + price
+                
+                    print(f"\n\n\tHi {name}, your purchased a {item}, with a price of {price} PHP plus 12% tax ({round(tax,2)}), total of \033[4m{round(Nprice,2)} PHP\033[0m")
+                    
+                    amount = eval(input("\n\tAmount given : "))
+                    change =  amount - Nprice
+                    print(f"\n\tChange : \033[4m{round(change,2)} PHP\033[0m") 
+
+                    print ("\n\n\t     Thank you for using the System")
+                    
+                elif Age >= 60:
+                    tax = price * .12
+                    Nprice = tax + price
+
+                    discount = Nprice * 0.052
+                    Dprice = Nprice - discount
+                    print (f"\n\n\tHi {name}, your purchased a {item}, with a price of {price} PHP plus 12% tax ({round(tax,2)}),  total of {Nprice} PHP,")
+                    print (f"\tBut you will get a senior discount at 5.2% ({round(discount,2)}), total of \033[4m{round(Dprice,2)} PHP\033[0m")
+
+                    
+                    amount = eval(input("\n\tAmount given : "))
+                    change =  amount - Dprice
+                    print(f"\n\tChange : \033[4m{round(change,2)} PHP\033[0m") 
+
+                    print ("\n\n\t     Thank you for using the System")
+
+
+            else :
+                print ("\n\n\t  .........No Grocery Purchased.........")
+
+            print ("\n\n\t\t----- System Exit -----")
+
+            time.sleep(1)
+            print("\n\n\t\t\t==INPUT==")
+            print('''\n\n\t# Grocery
+
+            print ("\n\n  ------------------GROCERY------------------")
+            name = input ("\n\n\tPlease Enter your name: ")
+
+            grocery = input("\tDid you buy a grocery(Yes/No) ---> ")
+
+            if grocery.lower() == "yes":
+                item = input("\n\tName  of the item: ")
+                price = eval(input("\tPrice of the item: "))
+                Age = eval(input("\tEnter your age: "))
+                
+                if Age < 60:
+                    tax = price * .12
+                    Nprice = tax + price
+                
+                    print(f"\n\n\tHi {name}, your purchased a {item}, with a price of {price} PHP plus 12% tax ({round(tax,2)}), total of \033[4m{round(Nprice,2)} PHP\033[0m")
+                    
+                    amount = eval(input("\n\tAmount given : "))
+                    change =  amount - Nprice
+                    print(f"\n\tChange : \033[4m{round(change,2)} PHP\033[0m") 
+
+                    print ("\n\n\t     Thank you for using the System")
+                    
+                elif Age >= 60:
+                    tax = price * .12
+                    Nprice = tax + price
+
+                    discount = Nprice * 0.052
+                    Dprice = Nprice - discount
+                    print (f"\n\n\tHi {name}, your purchased a {item}, with a price of {price} PHP plus 12% tax ({round(tax,2)}),  total of {Nprice} PHP,")
+                    print (f"\tBut you will get a senior discount at 5.2% ({round(discount,2)}), total of \033[4m{round(Dprice,2)} PHP\033[0m")
+
+                    
+                    amount = eval(input("\n\tAmount given : "))
+                    change =  amount - Dprice
+                    print(f"\n\tChange : \033[4m{round(change,2)} PHP\033[0m") 
+
+                    print ("\n\n\t     Thank you for using the System")
+
+
+            else :
+                print ("\n\n\t  .........No Grocery Purchased.........")
+
+            print ("\n\n\t\t----- System Exit -----\n\n")''')
+
+
+            print("\n\n\t===Exit===")
+
+
+        elif con_Sta.lower() == 'c':
+                print ("\n\t\t\t\t= Exit =\n")
+
+                break
+            
+        else:
+            print ("\n\t\t\t\t= Invalid Input =\n")
+
+            continue
+
 
 def Looping():
-    pass
+    isLoop = True
+    while isLoop == True:
+        time.sleep(0.3)
+        print(f"\n\n\t\t\t----Loops----")
+
+        print("\n\n\t\t\t\t_option_\n\n\t\t\ta\t---\tDefinition\n\t\t\tb\t---\tTypes\n\t\t\tc\t---\tExit")
+        
+        time.sleep(1)
+        Lo_op = input("\n\t\tChoose in the following: ")
+
+        if Lo_op.lower() == 'a':
+            print("\n\n\t\t\t\t----Python Loops----")
+            print("")
+            text15 = ('''\n\tA loop is an instruction that repeats multiple times as long as some 
+                      condition is met.
+        ''')
+            for char in text15:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+            print()
+
+        elif Lo_op.lower() == 'b':
+            print("\n\n\t\t\t\t----Types of Loops----")
+            print("")
+            text16 = ('''\n\tPython has two primitive loop commands:
+
+            a\t---\twhile loops
+            b\t---\tfor loops
+        ''')
+            for char in text16:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+            print()
+            Lo_op_inpt = input("\n\t\tChoose in the following: ")
+
+            if Lo_op_inpt.lower() == 'a':
+                print("\n\n\t\t\t\t----While Loops----")
+                print("")
+                text17 = ('''\n\tThe while loop we can execute a set of statements as long as a condition is true.
+            ''')
+                for char in text17:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                print()
+
+            
+
+                print()
+                tap()
+            # example
+
+                print ("\n\n  ------------------While Loops------------------")
+                print ()
+                tuloy = True
+                num = 0
+                
+                while tuloy == True:
+                    name = input ("\tEnter a name(Enter 'stop' to Terminate the Program) --> ")
+                    if name.lower() == "stop":
+                        print()
+                        print ("\t--Loop Terminated--")
+                        print ()
+                        print ("\tYou have total of ",num," names entered ")
+                        print ()
+                        break
+                        tuloy = False
+                    
+                    else:
+                        num += 1
+                        continue
+
+                time.sleep(1)
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\ttuloy = True
+                num = 0
+                
+                while tuloy == True:
+                    name = input ("Enter a name(Enter 'stop' to Terminate the Program) --> ")
+                    if name.lower() == "stop":
+                        print()
+                        print ("--Loop Terminated--")
+                        print ()
+                        print ("You have total of ",num," names entered")
+                        print ()
+                        break
+                        tuloy = False
+                    
+                    else:
+                        num += 1
+                        continue
+    ''')
+
+
+                print("\n\n\t===Exit===")
+                print()
+
+
+            elif Lo_op_inpt.lower() == 'b':
+                print("\n\n\t\t\t\t----For Loops----")
+                print("")
+                text18 = ('''\n\tA for loop is used for iterating over a sequence (that is either a list, 
+        a tuple, a dictionary, a set, or a string).
+                        
+        This is less like the for keyword in other programming languages, and works more 
+        like an iterator method as found in other object-orientated programming languages.
+        With the for loop we can execute a set of statements
+            ''')
+                for char in text18:
+                    print(char,end="",flush=True)
+                    time.sleep(0.01)
+                print()
+
+                print()
+                tap()
+            # example
+                print ("\n\n  ------------------For Loops------------------")
+                print()
+
+                for x in range (8,1,-1):
+
+                    for z in range (x,0,-1):
+                        print (" ", end=" ")
+                    
+                    for y in range ( 7, x, -1):
+                        print("*", end = " ")
+
+                    for a in range (7,x,-1):
+                        print ("*", end = " ")
+                    print()
+
+
+                for x in range (5,0,-1):
+
+                    for z in range (6,0,-1):
+                        print (" ", end=" ")
+                    
+                    for y in range (1,2):
+                        print("*", end = " ")
+
+                    for a in range (1,2):
+                        print ("*", end = " ")
+                    print()
+
+                print ()
+
+                time.sleep(1)
+                print("\n\n\t\t\t==INPUT==")
+                print('''\n\n\tfor x in range (8,1,-1):
+
+                    for z in range (x,0,-1):
+                        print (" ", end=" ")
+                    
+                    for y in range ( 7, x, -1):
+                        print("*", end = " ")
+
+                    for a in range (7,x,-1):
+                        print ("*", end = " ")
+                    print()
+
+
+                for x in range (5,0,-1):
+
+                    for z in range (6,0,-1):
+                        print (" ", end=" ")
+                    
+                    for y in range (1,2):
+                        print("*", end = " ")
+
+                    for a in range (1,2):
+                        print ("*", end = " ")
+                    print()
+''')
+
+
+                print("\n\n\t===Exit===")
+
+
+        elif Lo_op.lower() == 'c':
+                print ("\n\t\t\t\t= Exit =\n")
+
+                break
+            
+        else:
+            print ("\n\t\t\t\t= Invalid Input =\n")
+
+            continue
+
+
 
 def List():
+    isList = True
+    while isList == True:
+        time.sleep(0.3)
+        print(f"\n\n\t\t\t----List----")
+
+        print("\n\n\t\t\t\t_option_\n\n\t\t\ta\t---\tDefinition & Example\n\t\t\tb\t---\tExit")
+        
+        time.sleep(1)
+        Li_st = input("\n\t\tChoose in the following: ")
+
+        if Li_st.lower() == 'a':
+            print("\n\n\t\t\t\t----Lists----")
+            print("")
+            text15 = ('''\n\tLists are used to store multiple items in a single variable.
+        ''')
+            for char in text15:
+                print(char,end="",flush=True)
+                time.sleep(0.01)
+            print()
+            print()
+            tap()
+            # example
+            print ("\n\n  ------------------List------------------")
+            print()
+            myName1 = ['John','Marc', 'De Villa']
+
+            print (myName1)
+
+            time.sleep(1)
+            print("\n\n\t\t\t==INPUT==")
+            print('''\n\n\tmyName1 = ['John','Marc', 'De Villa']
+
+            print (myName1)
+''')
+
+        elif Li_st.lower() == 'b':
+                print ("\n\t\t\t\t= Exit =\n")
+
+                break
+            
+        else:
+            print ("\n\t\t\t\t= Invalid Input =\n")
+
+            continue
     pass
 
 
-
-operator()
-# print_F()
-# isContinue = True
-
-# while isContinue:
-#     pass
