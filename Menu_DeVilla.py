@@ -1,3 +1,4 @@
+
 #BSIT - 2A ----DE VILLA, JOHN MARC A.
 
 import time
@@ -1145,3 +1146,4 @@ while True:
         print("\n\t\t==invalid input==")
         clear_sc()
         continue
+    
